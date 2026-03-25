@@ -23,3 +23,35 @@ Events - specific actions performed by a user when using an application
 After an event , the default behaviour of the browser is to refresh
 
 event.preventDefault() - prevents the default behaviour of the browser (refreshing) after an event occurs
+
+
+variables - variable naming rules
+data types 
+data types methods
+data structures & their methods
+operators
+conditional statements
+loops 
+functions
+
+
+**quiz on functions**
+1. Student Grading System
+Write a function that takes a score (0–100) and returns a grade.
+Rules:
+80–100 → A
+70–79 → B
+60–69 → C
+50–59 → D
+Below 50 → F
+
+
+2.Password Strength Checker 
+Write a function that checks:
+length ≥ 8
+
+
+3.Reverse Number
+Write a JavaScript function that reverses a number.
+
+4.Write a function named averageOf4Numbers that receives 4 numbers as parameters and returns the mathematical average between them.
