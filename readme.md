@@ -126,3 +126,160 @@ and output the no. of students who had a score of 50 and above
       { name: "Apple", details: { price: 2, quantity: 50, category: "Grocery" } }
 }
 use the above object to get total revenue for each product if revenue = price * quantity
+
+
+
+*LOOPS*
+-> Control structures that execute a block of code repeatedly until a specified condition is met
+-> eliminates redundancy
+
+*Types of Loops*
+1.For Loop - you need a definite starting and ending point
+2.While Loop - only concerned with the condition - keeps looping as long as the condition is met
+
+
+*For Loop in JS* - uses the for keyword
+-> has 3 parts  
+1.initialization - starting point - where do i start looping from
+2.condition - condition to be met so that the loop keeps running
+3.update - increment / decrement after each iteration
+
+//loop to output 1 - 1000
+
+for(initialzation;condition;update){
+      //block of code executing repeatedly
+}
+
+for(let i=1; i<= 1000; i++){
+      console.log(i)
+}
+1++
+2
+3
+4
+
+
+
+999++
+1000 -> 1001
+
+let numbers = [1,2,3,4,5,6,7,8,9,10] //9 -> 10
+
+console.log(numbers[0])
+console.log(numbers[1])
+console.log(numbers[2])
+
+
+for(let i=0; i<numbers.length ; i++){
+      console.log(numbers[i])
+}
+
+0
+1
+9
+
+
+
+*Objects*
+-> Is a data structure that stores data in key value pairs
+-> The equivalent of dictionaries in Python
+
+*Properties of Objects*
+1.It stores data in key-value pairs
+2.We use the key to access the value
+3.Key is a string 
+4.Values can be of any data type
+5.They are mutable
+
+
+*Why use an object?*
+
+
+
+let person = {
+      name:"Mike",
+      age:20,
+     "full address":"Karen",
+}
+
+*accessing values in an object*
+1.dot notation - can only be used with keys that follow valid identifier naming rules
+2.bracket notation - can access keys that follow identifier naming rules or keys that dont
+
+console.log(person["full address"])
+
+
+Object.keys(person) - gives you keys in an array
+Object.values(person)
+Object.entries(person)
+
+
+
+let transactions = [
+  {
+    id: 1,
+    customer: { name: "John", tier: "Gold" },
+    items: [
+      { name: "Phone", price: 500, quantity: 1 },
+      { name: "Case", price: 50, quantity: 2 }
+    ]
+  },
+  {
+    id: 2,
+    customer: { name: "Alice", tier: "Silver" },
+    items: [
+      { name: "Laptop", price: 1200, quantity: 1 },
+      { name: "Mouse", price: 25, quantity: 2 }
+    ]
+  },
+  {
+    id: 3,
+    customer: { name: "Bob", tier: "Bronze" },
+    items: [
+      { name: "Keyboard", price: 100, quantity: 1 },
+      { name: "USB Cable", price: 10, quantity: 3 }
+    ]
+  },
+  {
+    id: 4,
+    customer: { name: "Eve", tier: "Gold" },
+    items: [
+      { name: "Monitor", price: 300, quantity: 2 }
+    ]
+  },
+  {
+    id: 5,
+    customer: { name: "Charlie", tier: "Silver" },
+    items: [
+      { name: "Tablet", price: 400, quantity: 1 },
+      { name: "Stylus", price: 80, quantity: 1 }
+    ]
+  },
+  {
+    id: 6,
+    customer: { name: "David", tier: "None" },
+    items: [
+      { name: "Headphones", price: 150, quantity: 2 }
+    ]
+  }
+]
+
+Write a program that:
+1.Loops through all transactions
+2.For each transaction; 
+   -> calculate the subtotal (price * quantity)
+3.Apply a discount based on the tier:
+   Gold -> 10%
+   Silver -> 5%
+   any other -> 0%
+4.Return:
+      {
+            totalRevenue: number,
+            totalDiscountGiven: number,
+            transactions: [
+                  {
+                        id: number
+                        finalAmount:number
+                  }
+            ]
+      }

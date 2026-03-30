@@ -73,3 +73,84 @@ function averageOf4Numbers(a,b,c,d){
 
 let avg = averageOf4Numbers(num1,num2,num3,num4)
 console.log(avg)
+
+
+let inventory =[
+
+      { name: "Phone", details:{ price: 500, quantity: 2, category: "Electronics" } },
+      { name: "Laptop", details: { price: 1000, quantity: 1, category: "Electronics" } },
+      { name: "Apple", details: { price: 2, quantity: 50, category: "Grocery" } }
+]
+// use the above object to get total revenue for each product if revenue = price * quantity
+
+
+
+console.log(inventory[0].details.price * inventory[0].details.quantity)
+console.log(inventory[1].details.price * inventory[1].details.quantity)
+
+
+let total_revenue = 0
+for(let i=0 ;i < inventory.length; i++){
+   let revenue = inventory[i].details.price * inventory[i].details.quantity
+   total_revenue += revenue
+   
+}
+
+console.log(total_revenue)
+
+
+0
+1000
+2000
+100
+
+
+
+let data = [
+  {
+    id: 1,
+    customer: { name: "John", tier: "Gold" },
+    items: [
+      { name: "Phone", price: 500, quantity: 1 },
+      { name: "Case", price: 50, quantity: 2 }
+    ]
+  },
+  {
+    id: 2,
+    customer: { name: "Alice", tier: "Silver" },
+    items: [
+      { name: "Laptop", price: 1200, quantity: 1 },
+      { name: "Mouse", price: 25, quantity: 2 }
+    ]
+  },
+  {
+    id: 3,
+    customer: { name: "Bob", tier: "Bronze" },
+    items: [
+      { name: "Keyboard", price: 100, quantity: 1 },
+      { name: "USB Cable", price: 10, quantity: 3 }
+    ]
+  },
+  {
+    id: 4,
+    customer: { name: "Eve", tier: "Gold" },
+    items: [
+      { name: "Monitor", price: 300, quantity: 2 }
+    ]
+  },
+  {
+    id: 5,
+    customer: { name: "Charlie", tier: "Silver" },
+    items: [
+      { name: "Tablet", price: 400, quantity: 1 },
+      { name: "Stylus", price: 80, quantity: 1 }
+    ]
+  },
+  {
+    id: 6,
+    customer: { name: "David", tier: "None" },
+    items: [
+      { name: "Headphones", price: 150, quantity: 2 }
+    ]
+  }
+]
