@@ -122,7 +122,7 @@ and output the no. of students who had a score of 50 and above
 
 4.let inventory ={
       { name: "Phone", details: { price: 500, quantity: 2, category: "Electronics" } },
-      { name: "Laptop", details: { price: 1000, quantity: 1, category: "Electronics" } },
+      { namedetails:: "Laptop",  { price: 1000, quantity: 1, category: "Electronics" } },
       { name: "Apple", details: { price: 2, quantity: 50, category: "Grocery" } }
 }
 use the above object to get total revenue for each product if revenue = price * quantity
@@ -274,12 +274,16 @@ Write a program that:
    any other -> 0%
 4.Return:
       {
-            totalRevenue: number,
-            totalDiscountGiven: number,
+            totalRevenue: number,  
+            totalDiscountGiven: number, 
             transactions: [
                   {
-                        id: number
-                        finalAmount:number
+                        id: number 6
+                        finalAmount:number 
                   }
             ]
       }
+
+
+1000 
+100

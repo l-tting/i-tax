@@ -106,7 +106,7 @@ console.log(total_revenue)
 
 
 
-let data = [
+let transactions = [
   {
     id: 1,
     customer: { name: "John", tier: "Gold" },
@@ -154,3 +154,45 @@ let data = [
     ]
   }
 ]
+
+
+console.log(transactions[5].items[0].price * transactions[5].items[0].quantity )
+
+for(let i=0; i < transactions.length ;i++){
+
+  let items = transactions[i].items
+  for(let j=0; j<items.length; j++){
+     let price = items[j].price
+     let quantity = items[j].quantity
+     let revenue = price * quantity
+  
+
+     let tier = transactions[i].customer.tier
+     let discount;
+     if(tier == "Gold"){
+        discount = 0.1 * revenue
+     }else if(tier== "Silver"){
+        discount = 0.05 * revenue
+     }else{
+         discount = 0 * revenue
+     }
+
+     let final_price = revenue - discount
+
+  }
+
+  console.log(
+   {
+            totalRevenue: revenue,  
+            totalDiscountGiven: discount, 
+            transactions: [
+                  {
+                        id: transactions[i].id ,
+                        finalAmount:final_price 
+                  }
+            ]
+      }
+  )
+}
+
+
