@@ -287,3 +287,34 @@ Write a program that:
 
 1000 
 100
+
+
+*OPTIONAL CHAINING*
+-> A way to safely access deeply nested objects without running into hard errors if
+something is undefined or null
+-> It uses the ternary operator (?)
+
+console.log(person?.work_info?.pay)
+
+Mombasa ---- Voi ----- Nairobi ---- Nakuru ---- Kisumu
+
+
+*Spread Operator*
+-> lets you expand or copy elements from arrays or objects
+-> ...
+*Spread Operator in Arrays*
+1.Copy array
+2.Merge an array
+
+*Function Tasks*
+1.Write a function that:
+ Takes an array
+ Returns a new array with duplicates removed
+
+
+2. Write a function that:
+Takes email and password
+Returns:
+"Invalid email" if no @
+"Password too short" if < 6 chars
+"Login successful" otherwise
