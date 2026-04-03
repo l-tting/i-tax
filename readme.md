@@ -318,3 +318,21 @@ Returns:
 "Invalid email" if no @
 "Password too short" if < 6 chars
 "Login successful" otherwise
+
+
+*More Tasks on Functions*
+1.Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.
+Example string : 'the quick brown fox'
+Expected Output : 'The Quick Brown Fox '
+
+
+2.Write a JavaScript function that accepts a string as a parameter and finds the longest word within the string.
+Example string : 'Web Development Tutorial'
+Expected Output : 'Development'
+
+
+3.Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
+Note : As the letter 'y' can be regarded as both a vowel and a consonant, we do not count 'y' as vowel here.
+Example string : 'The quick brown fox'
+Expected Output : 5
+
